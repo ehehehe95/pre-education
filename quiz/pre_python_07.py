@@ -5,3 +5,11 @@
 <출력>
  45
 """
+def summation(N):
+    Sum=0
+    for i in range(1,N+1):
+        Sum+=i
+        if Sum>1000:
+            return i
+
+print(summation(100))

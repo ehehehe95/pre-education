@@ -27,3 +27,11 @@
 
 
 """
+def diamond(N):
+    for i in range(N-1,-1,-1):
+        print(' '*i,end='')
+        print('★'*(N-i))
+    for j in range(1,N):
+        print(' '*j,end='')
+        print('★'*(N-j))
+

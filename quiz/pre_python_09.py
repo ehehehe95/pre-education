@@ -15,3 +15,17 @@ score : 88
 A
 
 """
+def Grade():
+    score=int(input('Input your score'))
+    if(score<=20):
+        print('F')
+    elif(20<score<=40):
+        print('D')
+    elif (40 < score <= 60):
+        print('C')
+    elif(60<score<=80):
+        print('B')
+    elif (80 < score <=100):
+        print('A')
+
+Grade()

@@ -16,3 +16,8 @@
 5 * 9 = 45
 
 """
+def MultipleTable(N):
+    for i in range(10):
+        print("%d * %d = %d" %(N,i,N*i))
+
+MultipleTable(5)

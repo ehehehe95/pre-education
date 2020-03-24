@@ -14,3 +14,20 @@ print(select_sort(list))
 [1, 2, 3, 6, 7, 8, 10, 21]
 
 '''
+
+def select_sort(list1):
+    length = len(list1)
+    for i in range(length):
+        least = list1[i]
+        leastindex = i
+        for j in range(i,length):
+            if least > list[j]:
+                least = list[j]
+                leastindex = j
+        list1[leastindex] = list1[i]
+        list1[i] = least
+    return list1
+
+list=[6,2,3,7,8,10,21,1]
+print(select_sort(list))
+

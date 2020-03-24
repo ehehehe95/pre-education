@@ -17,3 +17,27 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+
+"""class Coin:
+    def __init__(self, value, amount):
+        self.value = value
+        self.amount = amount
+"""
+
+
+def greedy():
+    total = int(input('액수입력 : '))
+    coins = input('동전의 종류 : ')
+    Coins = coins.split()
+    Coins = [int(i) for i in Coins]
+    Coins.sort()
+    Coins.reverse()
+    for value in Coins:
+        num = total // value
+        total -= num * value
+        print("{}원 동전 {}개".format(value, num), end=',')
+    print()
+
+
+greedy()

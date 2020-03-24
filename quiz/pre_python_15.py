@@ -8,3 +8,15 @@
 <출력>
 남자
 """
+def Gender():
+
+    socialN=input('주민등록번호를 입력 : ')
+    list1=list(socialN)
+
+    if list1[7]=='1':
+        print('남자')
+        
+    else:
+        print('여자')
+
+Gender()

@@ -14,3 +14,10 @@ print(new_list)
 ['exit', 'hi', 'playdata', 'intro']
 
 """
+file = ['exit.py','hi.py','playdata.hwp','intro.jpg']
+
+for i, item in enumerate(file):
+    if '.' in item:
+        file[i]=item[:item.index('.')]
+print('file = ',file)
+

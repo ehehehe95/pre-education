@@ -12,3 +12,10 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+for i in range(1,101):
+    if i % 5==0:
+        print('아자 ', end = '')
+    elif '3' in str(i) or '6' in str(i) or '9' in str(i) :  #여기 조건문 한문장으로 쓸수있나요? '3''6''9' in str(i)이런식으로..
+        print('짝', end='')
+    else:
+        print(i,end=' ')
